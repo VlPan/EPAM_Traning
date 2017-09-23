@@ -9,14 +9,7 @@
     border-radius: 5px;
 }
 
-.div-container2{
-    font-size: 70px;
-}
 
-.div-container2 div {
-    font-size: .8em;
-    color: white;
-}
 
 .div-container div:nth-child(odd) {
     color: greenyellow;
@@ -39,7 +32,14 @@
 
 
 
+.div-container2{
+    font-size: 70px;
+}
 
+.div-container2 div {
+    font-size: .8em;
+    color: white;
+}
 
 
 
