@@ -5,7 +5,7 @@ Repostiry for epam traning
 Create repository.
 
 ## HW_2
-Create repository.
+Links and target attribute.
 [HW_2](https://github.com/VlPan/EPAM_Traning/tree/master/HW_2)
 
 ## HW_3
