@@ -1,5 +1,5 @@
 #celebration_alert{
-    width: 300px;
+    width: 350px;
     margin: 40px auto;
     background-color: #eee;
     border-top: 2px solid #ddd;
@@ -30,17 +30,6 @@ td{
     font-size: .9em;
 }
 
-.possible_error{
-    display: inline-block;
-    width: 90%;
-    margin-bottom: 20px;
-    font-size: .9em;
-    color: red;
-}
-
-.error_alert{
-    border-bottom: 2px solid red;
-}
 
 input{
     background-color: #eee;
@@ -49,6 +38,7 @@ input{
     font-size: 16px;
 }
 
+
 input[type="date"]{
     width: 90%;
 }
@@ -56,6 +46,25 @@ input[type="date"]{
 input[type="time"]{
     width: 95%;
 }
+
+input[type="date"]:invalid+span:after {
+    content: 'Date occurs in the past';
+    height: 6px;
+    border-top: 1px solid red;
+    width: 15px;
+    color: red;
+}
+
+
+
+input[type="time"]:invalid+span:after {
+    content: '';
+    display: block;
+    height: 1px;
+    background-color: red;
+    width: 100%;
+}
+
 
 .fa-check-circle-o{
     float: right;
