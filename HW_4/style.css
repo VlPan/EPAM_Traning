@@ -21,13 +21,15 @@ hr{
 
 td{
     width: 100%;
-    padding-bottom: 4px;
+    padding-bottom: 7px;
+    position: relative;
 }
+
 
 .title{
     color: darkgray;
-    margin-bottom: 7px;
     font-size: .9em;
+    margin-bottom: 7px;
 }
 
 
@@ -47,22 +49,24 @@ input[type="time"]{
     width: 95%;
 }
 
+
 input[type="date"]:invalid+span:after {
     content: 'Date occurs in the past';
-    height: 6px;
-    border-top: 1px solid red;
-    width: 15px;
+    display: block;
+    position: relative;
+    font-size: .9em;
+    border-top: 2px solid red;
     color: red;
+    width: 90%;
 }
-
-
 
 input[type="time"]:invalid+span:after {
     content: '';
     display: block;
-    height: 1px;
+    height: 2px;
     background-color: red;
     width: 100%;
+
 }
 
 
