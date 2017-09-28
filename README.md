@@ -1,6 +1,10 @@
 # EPAM_Traning
 Repostiry for epam traning
 
+## HW_6
+BEM - Concept.
+[HW_6](https://github.com/VlPan/EPAM_Traning/tree/master/HW_6)
+
 ## HW_5
 Postions and Stream.
 [HW_5](https://github.com/VlPan/EPAM_Traning/tree/master/HW_5)
