@@ -2,7 +2,7 @@
 ## HW_6
 
 
-[Priview](https://vlpan.github.io/HW_6)
+**[Preview](https://vlpan.github.io/HW_6)**
 
 Words Separator: ( - ) **Example: hw-container**
 
