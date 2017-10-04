@@ -1,6 +1,10 @@
 # EPAM_Traning
 Repostiry for epam traning
 
+## HW_7
+[Code](https://github.com/VlPan/EPAM_Traning/tree/master/HW_7(Project))
+[Preview](https://vlpan.github.io/HW_7/)
+
 ## HW_6
 BEM - Concept.
 [HW_6](https://github.com/VlPan/EPAM_Traning/tree/master/HW_6)
