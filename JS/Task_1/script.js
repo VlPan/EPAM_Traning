@@ -19,7 +19,9 @@ console.log(undefined + 1); // undefined -> NaN. Output: NaN
 console.log(null == "\n0\n"); // equal null == "0". null only coerces to undefined ( null==undefined // true)// null -> undefined. (undefined == 0). Output: false
 console.log(+null == +"\n0\n"); // +null -> 0, "0" and +"0" both -> 0. Output: true
 
-
+var a = 2;
+console.log(a = a+++a++); // -1
+console.log(a); // -1
 
 
 
