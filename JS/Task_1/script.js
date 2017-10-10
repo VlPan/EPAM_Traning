@@ -1,4 +1,4 @@
-console.log("1" + 2 + 0); // "2" -> 2, 0 -> "0". Output:"120"
+console.log("1" + 2 + 0); // 2 -> "2", 0 -> "0". Output:"120"
 console.log("1" - 1 + 2); // "1" -> 1. Output: 2
 console.log(true + false); // true -> 1, false -> 0. Output: 1
 console.log(10 / "5"); // "5" -> 5. Output: 2
