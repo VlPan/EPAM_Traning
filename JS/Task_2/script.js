@@ -7,6 +7,7 @@ function fact(n) {
         return n * fact(n - 1)
     }
 }
+
 console.log(fact(5)); // Вычислить факториал 5
 
 // Fibonacci
@@ -32,19 +33,23 @@ console.log(Fib(10)); // Сгенерировать массив из 10 чис�
 function generatePrimeNumbersArray(number) {
     var generatePrimeNumbersArray = [];
     var currentStep = 2;
+    var i;
     next:
         while (generatePrimeNumbersArray.length < number) {
-            for (var i = currentStep; i < Infinity; i++) {
-                    for (var j = 2; j < i; j++) {
-                        currentStep = i + 1;
-                        if (i % j === 0) continue next;
-                    }
+
+            while (true) {
+                i = currentStep;
+                currentStep = i + 1;
+                for (var j = 2; j < i; j++) {
+                    if (i % j === 0) continue next;
+                }
                 generatePrimeNumbersArray.push(i);
                 continue next;
             }
+
         }
     return generatePrimeNumbersArray;
 }
 
 
-console.log(generatePrimeNumbersArray(1)); // Сгенерировать массив из 10 простых чисел
+console.log(generatePrimeNumbersArray(10)); // Сгенерировать массив из 10 простых чисел
