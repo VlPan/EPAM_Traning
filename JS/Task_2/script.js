@@ -33,7 +33,7 @@ console.log(Fib(10)); // Сгенерировать массив из 10 чис�
 function generatePrimeNumbersArray(number) {
     var primeNumbersArray = [];
     var currentStep = 2;
-    var i = 2;
+    var i;
     next:
         while (primeNumbersArray.length < number) {
             while (true) {
