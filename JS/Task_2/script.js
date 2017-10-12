@@ -31,24 +31,22 @@ console.log(Fib(10)); // Сгенерировать массив из 10 чис�
 // Simple Numbers
 // generate Array of simple numbers. number is amount of array
 function generatePrimeNumbersArray(number) {
-    var generatePrimeNumbersArray = [];
+    var primeNumbersArray = [];
     var currentStep = 2;
-    var i;
+    var i = 2;
     next:
-        while (generatePrimeNumbersArray.length < number) {
-
+        while (primeNumbersArray.length < number) {
             while (true) {
                 i = currentStep;
                 currentStep = i + 1;
                 for (var j = 2; j < i; j++) {
                     if (i % j === 0) continue next;
                 }
-                generatePrimeNumbersArray.push(i);
+                primeNumbersArray.push(i);
                 continue next;
             }
-
         }
-    return generatePrimeNumbersArray;
+    return primeNumbersArray;
 }
 
 
