@@ -40,9 +40,11 @@ function generatePrimeNumbersArray(number) {
                         if (i % j === 0) continue next;
                     }
                 generatePrimeNumbersArray.push(i);
+                continue next;
             }
         }
     return generatePrimeNumbersArray;
 }
 
-console.log(generatePrimeNumbersArray(10)); // Сгенерировать массив из 10 простых чисел
+
+console.log(generatePrimeNumbersArray(1)); // Сгенерировать массив из 10 простых чисел
