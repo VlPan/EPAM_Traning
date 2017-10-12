@@ -13,12 +13,6 @@ function Fib(n) {
 ```
 
 ```javascript
-function Fib(n) {
-  // generate array of Fibonacci numbers. n - amount of array.
-}
-```
-
-```javascript
 function generatePrimeNumbersArray(n) {
   // generate array of Prime numbers. n - amount of array.
 }
