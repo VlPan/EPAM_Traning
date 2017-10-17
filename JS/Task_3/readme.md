@@ -1,4 +1,4 @@
-## Task 2 - loops
+## Task 3 - functions and Scopes
 
 ```javascript
 function rememberArgs() {

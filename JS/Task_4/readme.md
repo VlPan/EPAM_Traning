@@ -1,4 +1,4 @@
-## Task 2 - loops
+## Task 4 - functional and prototype inheritance
 
 ```javascript
 // Make models
