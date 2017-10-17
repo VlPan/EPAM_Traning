@@ -20,17 +20,27 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="main.js" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/prototype-modal/main.js">
+      <file leaf-file-name="main.js" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/functional-modal/main.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="120">
-              <caret line="35" column="0" lean-forward="false" selection-start-line="35" selection-start-column="0" selection-end-line="38" selection-end-column="28" />
+            <state relative-caret-position="168">
+              <caret line="22" column="103" lean-forward="false" selection-start-line="22" selection-start-column="103" selection-end-line="22" selection-end-column="103" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="readme.md" pinned="false" current-in-tab="true">
+      <file leaf-file-name="main.js" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/prototype-modal/main.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="120">
+              <caret line="20" column="0" lean-forward="false" selection-start-line="20" selection-start-column="0" selection-end-line="20" selection-end-column="103" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="readme.md" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/readme.md">
           <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
             <state split_layout="SPLIT">
@@ -61,16 +71,6 @@
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="0">
               <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="51" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="CarModel.js" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/functional-modal/CarModel.js">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="168">
-              <caret line="7" column="113" lean-forward="false" selection-start-line="7" selection-start-column="113" selection-end-line="7" selection-end-column="113" />
               <folding />
             </state>
           </provider>
@@ -139,15 +139,15 @@
         <option value="$PROJECT_DIR$/functional-modal/SedanCar.js" />
         <option value="$PROJECT_DIR$/prototype-modal/CarModel.js" />
         <option value="$PROJECT_DIR$/functional-modal/CarModel.js" />
-        <option value="$PROJECT_DIR$/functional-modal/main.js" />
         <option value="$PROJECT_DIR$/index.html" />
         <option value="$PROJECT_DIR$/prototype-modal/SedanCar.js" />
         <option value="$PROJECT_DIR$/prototype-modal/UniversalCar.js" />
         <option value="$PROJECT_DIR$/prototype-modal/JeepCar.js" />
         <option value="$PROJECT_DIR$/prototype-modal/Manufacturer.js" />
         <option value="$PROJECT_DIR$/prototype-modal/Car.js" />
-        <option value="$PROJECT_DIR$/prototype-modal/main.js" />
         <option value="$PROJECT_DIR$/readme.md" />
+        <option value="$PROJECT_DIR$/prototype-modal/main.js" />
+        <option value="$PROJECT_DIR$/functional-modal/main.js" />
       </list>
     </option>
   </component>
@@ -190,6 +190,11 @@
             <path>
               <item name="Task_4" type="b2602c69:ProjectViewProjectNode" />
               <item name="Task_4" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="Task_4" type="b2602c69:ProjectViewProjectNode" />
+              <item name="Task_4" type="462c0819:PsiDirectoryNode" />
+              <item name="functional-modal" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="Task_4" type="b2602c69:ProjectViewProjectNode" />
@@ -244,12 +249,12 @@
       <option name="presentableId" value="Default" />
       <updated>1508249401306</updated>
       <workItem from="1508249403102" duration="3370000" />
-      <workItem from="1508253908870" duration="8240000" />
+      <workItem from="1508253908870" duration="8434000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="11610000" />
+    <option name="totallyTimeSpent" value="11804000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1616" height="876" extended-state="6" />
@@ -351,14 +356,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/functional-modal/main.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="48">
-          <caret line="7" column="45" lean-forward="true" selection-start-line="7" selection-start-column="45" selection-end-line="7" selection-end-column="45" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/functional-modal/SedanCar.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="120">
@@ -439,14 +436,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/prototype-modal/main.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="120">
-          <caret line="35" column="0" lean-forward="false" selection-start-line="35" selection-start-column="0" selection-end-line="38" selection-end-column="28" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/index.html">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="588">
@@ -466,6 +455,22 @@
             </folding>
           </first_editor>
           <second_editor />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/prototype-modal/main.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="120">
+          <caret line="20" column="0" lean-forward="false" selection-start-line="20" selection-start-column="0" selection-end-line="20" selection-end-column="103" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/functional-modal/main.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="168">
+          <caret line="22" column="103" lean-forward="false" selection-start-line="22" selection-start-column="103" selection-end-line="22" selection-end-column="103" />
+          <folding />
         </state>
       </provider>
     </entry>

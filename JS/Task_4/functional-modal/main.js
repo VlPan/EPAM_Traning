@@ -20,7 +20,7 @@ console.log(Nissan.getModels());
 
 // Make new instance of car with Audi manufacturer
 var car1 = new Car(Audi, 2001);
-// Models of this car should set in Audi manufacturer. Or there will be mistake
+// Models of this car should be in Audi manufacturer models array. Or the line under will give an error
 car1.setModel(AudiA4);
 
 // get model of instance
