@@ -71,6 +71,7 @@ $(document).ready(function () {
     }
 
     function getObjectFromLocalStorage(name) {
+        console.log(JSON.parse(localStorage.getItem(name)));
         return JSON.parse(localStorage.getItem(name));
     }
 
