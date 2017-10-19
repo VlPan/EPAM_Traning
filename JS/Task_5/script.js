@@ -1,27 +1,19 @@
-window.onbeforeunload = function (e) {
-
-    function removeObjectFromLocalStorage(name) {
-        localStorage.removeItem(name);
-    }
-
-    var dialogText = 'Форма очищена!';
-    console.log(dialogText);
-    removeObjectFromLocalStorage('formObject');
-    return dialogText;
+window.onbeforeunload = function () {
+    localStorage.removeItem('formObject');
 };
 
 $(document).ready(function () {
 
     var FormHandlerObject = function (Inputs) {
-        this.fromDate = Inputs.fromDate || ' ';
+        this.fromDate = Inputs.fromDate || 'дд.мм.гггг';
         this.fromTime = Inputs.fromTime || '--:--';
 
-        this.toDate = Inputs.toDate || " ";
-        this.toTime = Inputs.toTime || "--:--";
+        this.toDate = Inputs.toDate || 'дд.мм.гггг';
+        this.toTime = Inputs.toTime || '--:--';
 
         this.radioOption = Inputs.radioOption || ' ';
-        this.selectOneOption = Inputs.selectOneOption || " ";
-        this.selectTwoOption = Inputs.selectTwoOption || " ";
+        this.selectOneOption = Inputs.selectOneOption || ' ';
+        this.selectTwoOption = Inputs.selectTwoOption ||  ' ';
     };
 
     var Inputs = getObjectFromLocalStorage('formObject') || {};
@@ -31,90 +23,47 @@ $(document).ready(function () {
     var fromTime = document.getElementById('from_time');
     var toDate = document.getElementById('to_date');
     var toTime = document.getElementById('to_time');
-    var radioOptions = $('.hw-radio-options__option');
-    var selectOptions = $('.hw-select');
+    var radioOptions = document.getElementsByClassName('hw-radio-options__option');
+    var selectOptions = document.getElementsByClassName('hw-select');
 
-    fromDate.value = changeFormat(formHandler.fromDate);
-    fromTime.value = formHandler.fromTime;
-    toDate.value = changeFormat(formHandler.toDate);
-    toTime.value = formHandler.toTime;
+    fillInputsAndOptions(formHandler);
 
-    for (var i = 0; i < radioOptions.length; i++) {
-        if (radioOptions[i].value === formHandler.radioOption) {
-            radioOptions[i].checked = true;
-        }
-    }
-
-    for (var i = 0; i < selectOptions.length; i++) {
-        for (var y = 0; y < selectOptions[i].length; y++) {
-
-
-            if (selectOptions[0][y].value === formHandler.selectOneOption) {
-                console.log('FOUND!!!');
-                selectOptions[0][y].selected = true;
-            }
-
-            if (selectOptions[1][y].value === formHandler.selectTwoOption) {
-                console.log('FOUND!!!');
-                selectOptions[1][y].selected = true;
-            }
-
-
-        }
-    }
-
-    console.log(selectOptions);
 
     $(fromDate).focusout(function ($e) {
-        var value = $e.target.value;
         formHandler.fromDate = $e.target.value;
         setObjectToLocalStorage('formObject', formHandler);
-        getObjectFromLocalStorage('formObject');
     });
 
     $(fromTime).focusout(function ($e) {
-        var value = $e.target.value;
         formHandler.fromTime = $e.target.value;
         setObjectToLocalStorage('formObject', formHandler);
-        getObjectFromLocalStorage('formObject');
     });
 
     $(toDate).focusout(function ($e) {
-        var value = $e.target.value;
         formHandler.toDate = $e.target.value;
         setObjectToLocalStorage('formObject', formHandler);
-        getObjectFromLocalStorage('formObject');
     });
 
     $(toTime).focusout(function ($e) {
-        var value = $e.target.value;
         formHandler.toTime = $e.target.value;
         setObjectToLocalStorage('formObject', formHandler);
-        getObjectFromLocalStorage('formObject');
     });
 
 
     $(selectOptions[0]).change(function ($e) {
-        var value = $e.target.value;
         formHandler.selectOneOption = $e.target.value;
         setObjectToLocalStorage('formObject', formHandler);
-        getObjectFromLocalStorage('formObject');
     });
 
     $(selectOptions[1]).change(function ($e) {
-        var value = $e.target.value;
         formHandler.selectTwoOption = $e.target.value;
         setObjectToLocalStorage('formObject', formHandler);
-        getObjectFromLocalStorage('formObject');
     });
 
 
     $(radioOptions).change(function ($e) {
-        console.log($e.target.value);
         formHandler.radioOption = $e.target.value;
-
         setObjectToLocalStorage('formObject', formHandler);
-        getObjectFromLocalStorage('formObject');
     });
 
     function setObjectToLocalStorage(nameInLocalStorage, obj) {
@@ -122,14 +71,34 @@ $(document).ready(function () {
     }
 
     function getObjectFromLocalStorage(name) {
-        console.log(JSON.parse(localStorage.getItem(name)));
         return JSON.parse(localStorage.getItem(name));
     }
 
+    function fillInputsAndOptions(formHandler) {
+        fromDate.value = changeFormat(formHandler.fromDate);
+        fromTime.value = formHandler.fromTime;
+        toDate.value = changeFormat(formHandler.toDate);
+        toTime.value = formHandler.toTime;
+
+        for (var i = 0; i < radioOptions.length; i++) {
+            if (radioOptions[i].value === formHandler.radioOption) {
+                radioOptions[i].checked = true;
+            }
+        }
+
+        for (var i = 0; i < selectOptions.length; i++) {
+            for (var y = 0; y < selectOptions[i].length; y++) {
 
 
-    function fillInputsAndOptions(FormHandlerObject) {
+                if (selectOptions[0][y].value === formHandler.selectOneOption) {
+                    selectOptions[0][y].selected = true;
+                }
 
+                if (selectOptions[1][y].value === formHandler.selectTwoOption) {
+                    selectOptions[1][y].selected = true;
+                }
+            }
+        }
     }
 
     function changeFormat(string) {
@@ -140,12 +109,9 @@ $(document).ready(function () {
         arr[arr.length - 1] = arr[0];
         arr[0] = i;
 
-        console.log(arr.join('-'));
         return arr.join('-');
     }
 
-
-    changeFormat(formHandler.fromDate);
 });
 
 
