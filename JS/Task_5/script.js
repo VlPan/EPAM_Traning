@@ -1,8 +1,25 @@
-window.onbeforeunload = function () {
-    localStorage.removeItem('formObject');
-};
-
 $(document).ready(function () {
+
+    if (window.performance) {
+        console.info("window.performance work's fine on this browser");
+    }
+    if (performance.navigation.type == 1) {
+        console.info( "This page is reloaded" );
+        localStorage.removeItem('formObject');
+    } else {
+        console.info( "This page is not reloaded");
+    }
+
+    $(document).keydown(function (e) {
+        if (e.key=="F5") {
+            localStorage.removeItem('formObject');
+            console.log('REMOVED');
+        }
+        else if (e.key.toUpperCase() == "R" && prevKey == "CONTROL") {
+            localStorage.removeItem('formObject');
+        }
+        prevKey = e.key.toUpperCase();
+    });
 
     var FormHandlerObject = function (Inputs) {
         this.fromDate = Inputs.fromDate || 'дд.мм.гггг';
@@ -17,6 +34,7 @@ $(document).ready(function () {
     };
 
     var Inputs = getObjectFromLocalStorage('formObject') || {};
+    console.log(Inputs);
     var formHandler = new FormHandlerObject(Inputs);
 
     var fromDate = document.getElementById('from_date');
@@ -27,7 +45,7 @@ $(document).ready(function () {
     var selectOptions = document.getElementsByClassName('hw-select');
 
     fillInputsAndOptions(formHandler);
-
+    localStorage.setItem('test', 'test');
 
     $(fromDate).focusout(function ($e) {
         formHandler.fromDate = $e.target.value;
@@ -100,6 +118,7 @@ $(document).ready(function () {
                 }
             }
         }
+
     }
 
     function changeFormat(string) {
