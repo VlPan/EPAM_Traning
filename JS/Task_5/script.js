@@ -1,24 +1,30 @@
 window.onbeforeunload = function (e) {
+
+    function removeObjectFromLocalStorage(name) {
+        localStorage.removeItem(name);
+    }
+
     var dialogText = 'Форма очищена!';
     console.log(dialogText);
+    removeObjectFromLocalStorage('formObject');
     return dialogText;
 };
 
 $(document).ready(function () {
 
     var FormHandlerObject = function (Inputs) {
-        this.fromDate = Inputs.fromDate || '24.09.2017';
+        this.fromDate = Inputs.fromDate || ' ';
         this.fromTime = Inputs.fromTime || '--:--';
 
-        this.toDate = Inputs.toDate || "24.09.2017";
+        this.toDate = Inputs.toDate || " ";
         this.toTime = Inputs.toTime || "--:--";
 
-        this.radioOption = Inputs.radioOption || 'Wine';
-        this.selectOneOption = Inputs.selectOneOption || "Celebrate";
-        this.selectTwoOption = Inputs.selectTwoOption || "Present3";
+        this.radioOption = Inputs.radioOption || ' ';
+        this.selectOneOption = Inputs.selectOneOption || " ";
+        this.selectTwoOption = Inputs.selectTwoOption || " ";
     };
 
-    var Inputs = getObjectFromLocalStorage('formObject');
+    var Inputs = getObjectFromLocalStorage('formObject') || {};
     var formHandler = new FormHandlerObject(Inputs);
 
     var fromDate = document.getElementById('from_date');
@@ -119,6 +125,8 @@ $(document).ready(function () {
         console.log(JSON.parse(localStorage.getItem(name)));
         return JSON.parse(localStorage.getItem(name));
     }
+
+
 
     function fillInputsAndOptions(FormHandlerObject) {
 
