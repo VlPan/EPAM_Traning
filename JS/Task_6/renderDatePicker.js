@@ -14,7 +14,6 @@ var render = (function () {
         /**
          * Function render array of dates
          * @param arrOfDates {int[]} Array with dates
-         * @param currentDate {int} Array with dates
          */
         renderDatePicker: function (arrOfDates) {
             var days = ['MO', 'TO', 'WE', 'TH', 'FR', 'SA', 'SU'];

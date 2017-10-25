@@ -72,7 +72,6 @@ var myTime = (function () {
             /**
              * @param {int} The month number, 0 based
              * @param {int} The year, not zero based, required to account for leap years
-             * @param {int} The number of days to return, if more than day of month than it will get days from previous and future month
              * @return {Date[]} List with date objects for each day of the month
              */
 

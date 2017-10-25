@@ -17,8 +17,8 @@
 }
 
 /*.w10-calendar__days-of-week{*/
-    /*display: flex;*/
-    /*justify-content: space-around;*/
+/*display: flex;*/
+/*justify-content: space-around;*/
 /*}*/
 
 .w10-calendar__row{
@@ -28,13 +28,19 @@
 
 .w10-calendar__day{
     padding: 10px 0;
-    width: 12%;
+    width: 14.2%;
     min-width: 15px;
     display: inline-block;
     cursor: pointer;
     text-align: center;
 }
 
+.w10-calendar__timer{
+    color: white;
+    margin: 0;
+    font-size: 4em;
+    font-weight: 400;
+}
 
 
 .w10-calendar__day:hover{
@@ -68,7 +74,7 @@
 }
 
 .w10-calendar__month-year{
-    font-size: 30px;
+    font-size: 25px;
     margin-bottom: 40px;
 }
 
