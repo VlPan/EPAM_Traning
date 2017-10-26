@@ -144,7 +144,7 @@ function nextMonth() {
     var daysContainer = document.querySelector('.w10-calendar__days');
     var monthAndYearString = document.querySelector('.w10-calendar__month-year');
     pickedMonth ++;
-    if(pickedMonth === 11){
+    if(pickedMonth === 12){
         pickedYear++;
         pickedMonth = 0;
     }
