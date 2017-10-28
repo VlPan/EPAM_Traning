@@ -1,0 +1,15 @@
+{
+  "name": "task_7",
+  "version": "1.0.0",
+  "description": "Bank Api",
+  "main": "app.js",
+  "scripts": {
+    "start": "node Promises.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "VlPan",
+  "license": "ISC",
+  "dependencies": {
+    "xmlhttprequest": "^1.8.0"
+  }
+}
