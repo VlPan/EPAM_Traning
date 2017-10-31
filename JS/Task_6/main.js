@@ -50,6 +50,9 @@ next.addEventListener('click', function (event) {
     partForRerender.removeChild(oldNode);
     var node = render.renderOnlyDays(arr);
     partForRerender.appendChild(node);
+
+
+
 });
 
 

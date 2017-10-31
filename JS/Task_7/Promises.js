@@ -1,42 +1,62 @@
-let XMLHttpRequest = require("xmlhttprequest").XMLHttpRequest;
-let options = ['http://www.nbrb.by/API/ExRates/Currencies', 'http://www.nbrb.by/API/ExRates/Rates?Periodicity=0', 'http://www.nbrb.by/API/ExRates/Rates/145', 'http://www.nbrb.by/API/ExRates/Rates/298?onDate=2017-10-1',
-    'http://www.nbrb.by/API/ExRates/Rates/USD?ParamMode=2'];
 
-function httpGet(url) {
+    let XMLHttpRequest = require("xmlhttprequest").XMLHttpRequest;
+    var link1 = 'http://www.nbrb.by/API/ExRates/Currencies';
+    var link2 = 'http://www.nbrb.by/API/ExRates/Rates?Periodicity=0';
+    var link3 = 'http://www.nbrb.by/API/ExRates/Rates/145'
+    var link4 = 'http://www.nbrb.by/API/ExRates/Rates/298?onDate=2017-10-1';
+    var link5 = 'http://www.nbrb.by/API/ExRates/Rates/USD?ParamMode=2';
 
-    return new Promise(function (resolve, reject) {
+    function httpGet(url) {
 
-        let xhr = new XMLHttpRequest();
-        xhr.open('GET', url, false);
+        return new Promise(function (resolve, reject) {
 
-        xhr.onload = function () {
-            if (this.status === 200) {
-                resolve(xhr.responseText);
-            } else {
-                var error = new Error(this.statusText);
-                error.code = this.status;
-                reject(error);
-            }
-        };
+            let xhr = new XMLHttpRequest();
+            xhr.open('GET', url, true);
 
-        xhr.onerror = function () {
-            reject(new Error("Network Error"));
-        };
+            xhr.onload = function () {
+                if (this.status === 200) {
+                    resolve(xhr.responseText);
+                } else {
+                    var error = new Error(this.statusText);
+                    error.code = this.status;
+                    reject(error);
+                }
+            };
 
-        xhr.send();
-    });
+            xhr.onerror = function () {
+                reject(new Error("Network Error"));
+            };
 
-}
+            xhr.send();
+        });
 
-options.forEach(function (option, index) {
-    console.log(option);
-    httpGet(option)
+    }
+
+
+    httpGet(link1)
         .then(
-            response => console.log(`Fulfilled: ${response} \n REQUEST ${index + 1} IS DONE`),
-            error => console.log(`Rejected: ${error}`)
-        );
-});
+            response => {
+            console.log(`Fulfilled: ${response} \n REQUEST  IS DONE`);
+    return httpGet(link2)
+},
+    error => console.log("Rejected: " + error))
+.then(
+        response => {
+        console.log(`Fulfilled: ${response} \n REQUEST  IS DONE`);
+    return httpGet(link3)
+},
+    error => console.log("Rejected: " + error))
+.then(
+        response => {
+        console.log(`Fulfilled: ${response} \n REQUEST  IS DONE`);
+    return httpGet(link4)
+},
+    error => console.log("Rejected: " + error))
+.then(
+        response => {
+        console.log(`Fulfilled: ${response} \n REQUEST  IS DONE`);
+    return httpGet(link5)
+},
+    error => console.log("Rejected: " + error))
 
-
-
-
+setInterval(()=>console.log('111'), 100)
