@@ -1,6 +1,10 @@
+
+
 .hw-contact__form
 {
     width: 50%;
+
+
 }
 
 .hw-contact__introduction{
@@ -22,12 +26,24 @@
     margin-bottom: 30px;
     padding: 3px;
 
-    color: white;
+    /*color: white;*/
     border: none;
     border-bottom: 2px solid #e8a95b;
     outline: none;
     background: transparent;
     font-family: inherit;
+}
+
+.hw-contact-form__name--white-text::-webkit-input-placeholder,
+ .hw-contact-form__email--white-text::-webkit-input-placeholder,
+ .hw-contact-form__message--white-text::-webkit-input-placeholder{
+     color: white;
+ }
+
+.hw-contact-form__name--white-text:focus::-webkit-input-placeholder,
+.hw-contact-form__email--white-text:focus::-webkit-input-placeholder,
+.hw-contact-form__message--white-text:focus::-webkit-input-placeholder{
+    color: white;
 }
 
 .hw-contact-form__name::-webkit-input-placeholder,
@@ -39,7 +55,7 @@
     transition: text-indent .3s ease;
     text-indent: 0;
 
-    color: white;
+    /*color: white;*/
 }
 
 .hw-contact-form__name::-moz-placeholder,
@@ -51,7 +67,7 @@
     transition: text-indent .3s ease;
     text-indent: 0;
 
-    color: white;
+    /*color: white;*/
 }
 
 .hw-contact-form__name:-moz-placeholder,
@@ -63,7 +79,7 @@
     transition: text-indent .3s ease;
     text-indent: 0;
 
-    color: white;
+    /*color: white;*/
 }
 
 .hw-contact-form__name:-ms-input-placeholder,
@@ -75,7 +91,7 @@
     transition: text-indent .3s ease;
     text-indent: 0;
 
-    color: white;
+    /*color: white;*/
 }
 
 .hw-contact-form__name:focus::-webkit-input-placeholder,
@@ -116,7 +132,6 @@
 
 .hw-contact-form__btn{
     padding: 10px 40px;
-    background-color: white;
     border: none;
     cursor: pointer;
     font-size: 1.2em;
@@ -124,4 +139,8 @@
     color: #7f7d79;
     margin-bottom: 25px;
     min-width: 40%;
+}
+
+.hw-contact-form__btn--white-back{
+    background-color: white;
 }

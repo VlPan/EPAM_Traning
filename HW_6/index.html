@@ -32,11 +32,12 @@
                         <div class="hw-date-validator"> <!-- Блок -->
                             <input class="hw-date-validator__input"
                                    type="date"
-                                   min="2017-09-25"
-                                   max="2017-09-25"
+                                   min="2018-09-25"
+                                   max="2019-09-25"
                                    required
                                    pattern="[0-9]{4}-[0-9]{2}-[0-9]{2}"
-                                   value="2017-09-24">  <!-- Элемент -->
+                                   value=""
+                                   id="from_date">  <!-- Элемент -->
                             <span class="hw-date-validator__validator"></span> <!-- Элемент -->
                         </div>
                     </td>
@@ -47,7 +48,8 @@
                                    type="time"
                                    required
                                    min="16:00"
-                                   max="23:59">
+                                   max="23:59"
+                                   id="from_time">
                             <!-- Элемент -->
                             <span class="hw-time-validator__validator"></span> <!-- Элемент -->
                         </div>
@@ -64,10 +66,11 @@
                         <div class="hw-date-validator"> <!-- Блок -->
                             <input class="hw-date-validator__input"
                                    type="date"
-                                   min="2017-09-25"
-                                   max="2017-09-25"
+                                   min="2018-09-25"
+                                   max="2019-09-25"
                                    required
-                                   value="2017-09-24">  <!-- Элемент -->
+                                   value=""
+                                   id="to_date">  <!-- Элемент -->
                             <span class="hw-date-validator__validator"></span> <!-- Элемент -->
                         </div>
                     </td>
@@ -78,7 +81,8 @@
                                    type="time"
                                    required
                                    min="16:00"
-                                   max="23:59">
+                                   max="23:59"
+                                   id="to_time">
                             <!-- Элемент -->
                             <span class="hw-time-validator__validator"></span> <!-- Элемент -->
                         </div>
@@ -93,6 +97,26 @@
 
             <!-- Элемент -->
 
+            <hr>
+            <div class="hw-radio-options">
+                <input class="hw-radio-options__option" type="radio" name="group2" value="Water"> Water<br>
+                <input class="hw-radio-options__option" type="radio" name="group2" value="Beer"> Beer<br>
+                <input class="hw-radio-options__option" type="radio" name="group2" value="Wine"> Wine<br>
+            </div>
+            <hr>
+            <label for="select1">Selectors</label> <br>
+            <select class="hw-select" id="select1">
+                <option value="Celebrate">Celebrate</option>
+                <option value="Joke">Joke</option>
+                <option value="Ignore">Ignore</option>
+            </select>
+
+            <select class="hw-select" id="select2">
+                <option value="Present1">Present1</option>
+                <option value="Present2">Present2</option>
+                <option value="Present3">Present3</option>
+            </select>
+
 
             <div class="hw-right"> <!-- Блок -->
                 <a href="myframe.html" target="my_frame" class="hw-confirm-button"> <!-- Блок -->
@@ -102,134 +126,14 @@
         </form>
     </div>
 
-    <h1 class="hw-title hw-title--big">Отдельные Блоки:</h1> <!-- Блок -->
-    <div class="hw-separate-block"> <!-- Блок обертка -->
-        <div class="hw-block-description">hw-time-validator:</div> <!-- Блок -->
-        <div class="hw-time-validator"> <!-- Блок -->
-            <input class="hw-time-validator__input"
-                   type="time"
-                   required
-                   min="16:00"
-                   max="23:59">
-            <!-- Элемент -->
-            <span class="hw-time-validator__validator"></span> <!-- Элемент -->
-        </div>
-    </div>
-
-
-
-<div class="hw-separate-block"> <!-- Блок обертка -->
-    <div class="hw-block-description">hw-date-validator:</div> <!-- Блок -->
-    <div class="hw-date-validator"> <!-- Блок -->
-
-        <!-- Элемент -->
-        <input class="hw-date-validator__input"
-               type="date"
-               min="2017-09-25"
-               max="2017-09-25"
-               required
-               value="2017-09-24">  <!-- Элемент -->
-        <span class="hw-date-validator__validator"></span> <!-- Элемент -->
-    </div>
-</div>
-<div class="hw-separate-block"> <!-- Блок обертка -->
-    <div class="hw-block-description">hw-title:</div> <!-- Блок -->
-    <h3 class="hw-title">Description</h3> <!-- Блок -->
-    <p class="hw-title__subtitle">Come help celebrate Mel's birthday with dinner, drinks and putt-putt</p>
-</div>
-
-<div class="hw-separate-block"> <!-- Блок обертка -->
-    <div class="hw-block-description">hw-confirm-button:</div> <!-- Блок -->
-    <a href="#" target="#" class="hw-confirm-button"> <!-- Блок -->
-        <i class="fa fa-check-circle-o" aria-hidden="true"></i>
-    </a>
-</div>
-
-    <div class="hw-separate-block"> <!-- Блок обертка -->
-        <div class="hw-block-description">hw-celebration-alert:</div> <!-- Блок -->
-        <form class="hw-celebration-alert"> <!-- Блок --> <!-- Модификатор -->
-            <h3 class="hw-title">Event name</h3> <!-- Блок -->
-            <p class="hw-title__subtitle">Mel's birthday celebration</p> <!-- Элемент -->
-            <hr class="hw-horizontal"> <!-- Блок -->
-            <table class="hw-table-form"> <!-- Блок -->
-                <tr class="hw-table-form__row"> <!-- Элемент -->
-                    <td class="hw-table-form__col"> <!-- Элемент -->
-                        <label class="hw-title">From</label>  <!-- Блок -->
-                    </td>
-                </tr>
-                <tr class="hw-table-form__row"> <!-- Элемент -->
-                    <td class="hw-table-form__col"> <!-- Элемент -->
-                        <div class="hw-date-validator"> <!-- Блок -->
-                            <input class="hw-date-validator__input"
-                                   type="date"
-                                   min="2017-09-25"
-                                   max="2017-09-25"
-                                   required
-                                   pattern="[0-9]{4}-[0-9]{2}-[0-9]{2}"
-                                   value="2017-09-24">  <!-- Элемент -->
-                            <span class="hw-date-validator__validator"></span> <!-- Элемент -->
-                        </div>
-                    </td>
-
-                    <td class="hw-table-form__col"> <!-- Элемент -->
-                        <div class="hw-time-validator"> <!-- Блок -->
-                            <input class="hw-time-validator__input"
-                                   type="time"
-                                   required
-                                   min="16:00"
-                                   max="23:59">
-                            <!-- Элемент -->
-                            <span class="hw-time-validator__validator"></span> <!-- Элемент -->
-                        </div>
-                    </td>
-                </tr>
-
-                <tr class="hw-table-form__row"> <!-- Элемент -->
-                    <td class="hw-table-form__col"> <!-- Элемент -->
-                        <label class="hw-title">To</label> <!-- Блок -->
-                    </td>
-                </tr>
-                <tr class="hw-table-form__row"> <!-- Элемент -->
-                    <td class="hw-table-form__col"> <!-- Элемент -->
-                        <div class="hw-date-validator"> <!-- Блок -->
-                            <input class="hw-date-validator__input"
-                                   type="date"
-                                   min="2017-09-25"
-                                   max="2017-09-25"
-                                   required
-                                   value="2017-09-24">  <!-- Элемент -->
-                            <span class="hw-date-validator__validator"></span> <!-- Элемент -->
-                        </div>
-                    </td>
-
-                    <td class="hw-table-form__col"> <!-- Элемент -->
-                        <div class="hw-time-validator"> <!-- Блок -->
-                            <input class="hw-time-validator__input"
-                                   type="time"
-                                   required
-                                   min="16:00"
-                                   max="23:59">
-                            <!-- Элемент -->
-                            <span class="hw-time-validator__validator"></span> <!-- Элемент -->
-                        </div>
-                    </td>
-                </tr>
-            </table>
-
-            <h3 class="hw-title">Description</h3> <!-- Блок -->
-            <p class="hw-title__subtitle">Come help celebrate Mel's birthday with dinner, drinks and putt-putt</p>
-            <!-- Элемент -->
-
-
-            <div class="hw-right"> <!-- Блок -->
-                <a href="myframe.html" target="my_frame" class="hw-confirm-button"> <!-- Блок -->
-                    <i class="fa fa-check-circle-o" aria-hidden="true"></i>
-                </a>
-            </div>
-        </form>
-    </div>
-    <iframe src="startframe.html" name="my_frame" width="100%" height="200px" class="hw-frame"></iframe>
 
 </div>
+<iframe src="startframe.html" name="my_frame" width="100%" height="200px" class="hw-frame"></iframe>
+
+<script
+        src="https://code.jquery.com/jquery-3.2.1.min.js"
+        integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4="
+        crossorigin="anonymous"></script>
+<script src="script.js"></script>
 </body>
 </html>
