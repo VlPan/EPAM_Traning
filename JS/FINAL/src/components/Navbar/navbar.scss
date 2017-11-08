@@ -1,0 +1,66 @@
+@import "./../../base_styles/settings";
+
+.md-navbar{
+  z-index: 2;
+  top:0;
+  overflow: hidden;
+  background: $main-color;
+  width: 100%;
+}
+
+.md-navbar--fixed-postion{
+  position: fixed;
+}
+
+.md-navbar--big-left-margin{
+  margin-left: 200px;
+}
+
+.md-navbar--small-left-margin{
+  margin-left: 65px;
+}
+
+.md-navbar--white-text{
+  color: white;
+}
+.md-navbar--width90{
+  width: 80%;
+}
+
+.md-navbar__container{
+  display: flex;
+  flex-wrap: wrap;
+  min-height: 80px;
+  align-items: center;
+  justify-content: center;
+  margin: 0 30px;
+}
+
+.md-navbar__nav{
+  display: flex;
+  margin-left: auto;
+  padding-right: 200px;
+}
+
+
+.md-navbar__nav-item{
+  position: relative;
+  margin: 25px;
+  color: $black-blue;
+  cursor: pointer;
+  text-decoration: underline;
+  font-weight: bold;
+}
+
+.md-navbar__nav-item::after{
+  content: '|';
+  position: absolute;
+  margin-left: 25px;
+  color: $grey-color;
+  font-weight: bold;
+}
+
+.md-navbar__nav-item:last-of-type:after{
+  content: '';
+}
+

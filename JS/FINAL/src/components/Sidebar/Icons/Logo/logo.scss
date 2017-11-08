@@ -1,0 +1,17 @@
+@import "../../../../base_styles/settings";
+
+.md-logo{
+  display: flex;
+}
+
+.md-logo__logo-title{
+  color: grey;
+  font-size: $big-font;
+  margin-left: 10px;
+}
+
+.md-logo__logo-img{
+  background: url('./../../../../assets/img/logo.jpg') no-repeat center/cover;
+  height: 30px;
+  width: 30px;
+}

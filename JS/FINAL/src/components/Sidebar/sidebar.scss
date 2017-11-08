@@ -1,0 +1,22 @@
+@import "./../../base_styles/settings";
+
+.md-sidebar--black-body{
+  background: $side-bar-color;
+  color: white;
+}
+
+.md-sidebar{
+  height: 100vh;
+  transition: width .15s linear;
+  width: 65px; //200
+  position: fixed;
+  top:0;
+}
+
+.md-sidebar--big-width{
+  width: 192px;
+}
+
+.md-sidebar--small-width{
+  width: 65px;
+}

@@ -1,0 +1,28 @@
+@import "./../../base_styles/settings";
+@import './../../base_styles/base';
+@import './../../base_styles/reset.css';
+@import './../../base_styles/queries';
+@import './../../assets/font-awesome-4.7.0/css/font-awesome.min.css';
+
+.md__films-container--big-left-margin{
+  margin-left: 265px;
+}
+
+.md__films-container--small-top-margin{
+  margin-top: 90px;
+}
+
+.md__films-container--small-left-margin{
+  margin-left: 80px;
+}
+
+.md__films-container--white-text{
+  color: white;
+}
+
+.md__films-container{
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+}
