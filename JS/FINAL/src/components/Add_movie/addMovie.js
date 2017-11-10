@@ -75,7 +75,7 @@ class AddMovie extends React.Component {
                         <input type="text" name="title" value={this.state.value} onChange={this.change}/>
                         {!this.state.title &&
                         <div className="md-add-movie__error">Title is required</div>}
-                        <label htmlFor="">Overview</label>
+                        <label>Overview</label>
                         <textarea name="overview" cols="30" rows="10" onChange={this.change}></textarea>
                         {!this.state.overview &&
                         <div className="md-add-movie__error">Overview is required</div>}
@@ -86,46 +86,46 @@ class AddMovie extends React.Component {
                             <div className="md-add-movie__column">
                                 <div>
                                     <input type="checkbox" name="genre" value="Action"/>
-                                    <label htmlFor="Action">Action</label>
+                                    <label>Action</label>
                                 </div>
                                 <div>
                                     <input type="checkbox" name="genre" value="Adventure"/>
-                                    <label htmlFor="Action">Adventure</label>
+                                    <label>Adventure</label>
                                 </div>
                                 <div>
                                     <input type="checkbox" name="genre" value="Thriller"/>
-                                    <label htmlFor="Action">Thriller</label>
+                                    <label>Thriller</label>
                                 </div>
                                 <div>
                                     <input type="checkbox" name="genre" value="Comedy"/>
-                                    <label htmlFor="Action">Comedy</label>
+                                    <label>Comedy</label>
                                 </div>
                                 <div>
                                     <input type="checkbox" name="genre" value="Drama"/>
-                                    <label htmlFor="Action">Drama</label>
+                                    <label>Drama</label>
                                 </div>
                             </div>
 
                             <div className="md-add-movie__column">
                                 <div>
                                     <input type="checkbox" name="genre" value="Horror"/>
-                                    <label htmlFor="Action">Horror</label>
+                                    <label>Horror</label>
                                 </div>
                                 <div>
                                     <input type="checkbox" name="genre" value="Action"/>
-                                    <label htmlFor="Action">Action</label>
+                                    <label>Action</label>
                                 </div>
                                 <div>
                                     <input type="checkbox" name="genre" value="Action"/>
-                                    <label htmlFor="Action">Criminal</label>
+                                    <label>Criminal</label>
                                 </div>
                                 <div>
                                     <input type="checkbox" name="genre" value="War"/>
-                                    <label htmlFor="Action">War</label>
+                                    <label>War</label>
                                 </div>
                                 <div>
                                     <input type="checkbox" name="genre" value="Documentary"/>
-                                    <label htmlFor="Action">Documentary</label>
+                                    <label>Documentary</label>
                                 </div>
                             </div>
                         </div>
