@@ -1,22 +1,43 @@
 @import "./../../base_styles/settings";
 
-.md-sidebar--black-body{
-  background: $side-bar-color;
-  color: white;
-}
-
 .md-sidebar{
-  height: 100vh;
-  transition: width .15s linear;
-  width: 65px; //200
-  position: fixed;
-  top:0;
+  width: 20px;
+  display: flex;
 }
 
-.md-sidebar--big-width{
-  width: 192px;
+.md-sidebar__column{
+  margin-top: 20px;
+  margin-left: 20px;
 }
 
-.md-sidebar--small-width{
-  width: 65px;
+.md-sidebar__icon{
+  margin-bottom: 27px;
+  cursor: pointer;
+  font-size: $icons-font;
+}
+
+
+
+.md-sidebar__label{
+  margin-top: $icons-font + 5px;
+  cursor: pointer;
+  font-weight: 700;
+  font-size: $middle-font;
+}
+
+
+.md-logo{
+  display: flex;
+}
+
+.md-logo__logo-title{
+  color: grey;
+  font-size: $big-font;
+  margin-left: 10px;
+}
+
+.md-logo__logo-img{
+  background: url('./../../assets/img/logo.jpg') no-repeat center/cover;
+  height: 30px;
+  width: 30px;
 }

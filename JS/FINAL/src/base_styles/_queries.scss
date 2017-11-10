@@ -2,10 +2,10 @@
   .md-navbar--big-left-margin {
     margin-left: 100px !important;
   }
-  .md-sidebar{
+  .md__sidebar{
     z-index: 3;
   }
-  .md-navbar__nav{
+  .md-navbar{
      padding-right: 0 !important;
      margin-left: 10px !important;
     justify-content: center !important;
@@ -13,7 +13,7 @@
     text-align: center;
     width: 100%;
    }
-  .md-navbar__container{
+  .md-container{
     justify-content: center !important;
     align-items: center !important;
   }
@@ -41,8 +41,14 @@
     display: none;
   }
 
-  .md-navbar__nav{
+  .md-navbar{
+    padding-right: 0;
+  }
+
+  .md-navbar__container{
     display: flex;
+    justify-content: center;
+    align-items: center;
     flex-wrap: wrap;
   }
 
@@ -53,7 +59,7 @@
   .md-arrow{
     display: none !important;
   }
-  .md-navbar__container{
+  .md__container{
     justify-content: center !important;
     align-items: center !important;
   }
@@ -61,8 +67,8 @@
     width: 100% !important;
   }
 
- .md-navbar__nav{
-   padding-right: 0 !important;
+ .md-navbar{
+   padding-right: 0px !important;
  }
 
 }

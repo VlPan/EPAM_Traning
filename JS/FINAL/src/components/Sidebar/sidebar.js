@@ -1,42 +1,39 @@
 import React from 'react';
-// import ReactDOM from 'react-dom';
-import Icons from './Icons/icons';
 import './sidebar.scss';
 
 
-class Sidebar extends React.Component {
-    constructor(props){
-        super(props);
-       // this.handleOpenSidebar = this.handleOpenSidebar.bind(this);
-        // this.state = {
-        //     openSideBar: this.props.openSidebar
-        // };
-    }
-    // componentDidMount(){
-    //     this.sidebarNode = ReactDOM.findDOMNode(this).querySelector('.md-sidebar');
-    // }
-    render() {
-        return (
-            <div className={['md-sidebar',
-                            'md-sidebar--black-body',
-                            this.props.openSidebar ? 'md-sidebar--big-width' : 'md-sidebar--small-width'].join(' ')}>
-                <Icons toggleSidebar = {this.props.toggleSidebar}
-                       openSidebar = {this.props.openSidebar}
-                />
+const Sidebar = (props) => {
+    return (
+        <div className="md-sidebar">
+            <div className="md-sidebar__column">
+                <i className="fa fa-th-list      md-sidebar__icon md-sidebar__main"
+                   aria-hidden="true"
+                   onClick={props.toggleSidebar}
+                ></i>
+                <i className="fa fa-film         md-sidebar__icon" aria-hidden="true"></i>
+                <i className="fa fa-file-video-o md-sidebar__icon" aria-hidden="true"></i>
+                <i className="fa fa-history      md-sidebar__icon" aria-hidden="true"></i>
+                <i className="fa fa-question     md-sidebar__icon" aria-hidden="true"></i>
             </div>
-        );
-    }
-    // handleOpenSidebar(){
-    //     console.log(this.props.openSidebar);
-    //     if(this.props.openSidebar){
-    //         ReactDOM.findDOMNode(this).style.width = '192px';
-    //     }else{
-    //         if(ReactDOM.findDOMNode(this)) {
-    //             ReactDOM.findDOMNode(this).style.width = '65px';
-    //         }
-    //     }
-    // }
-}
+
+            <div className="md-sidebar__column">
+                {props.openSidebar &&
+                <div className="md-sidebar__labels">
+                    <div className="md-logo">
+                        <div className="md-logo__logo-img"></div>
+                        <div className="md-logo__logo-title">Logo</div>
+                    </div>
+                    <div className="md-sidebar__label">Movies</div>
+                    <div className="md-sidebar__label">Tv-Shows</div>
+                    <div className="md-sidebar__label">MyLibrary</div>
+                    <div className="md-sidebar__label">Support</div>
+                </div>
+                }
+            </div>
+        </div>
+
+    );
+};
 
 
 export default Sidebar;
